@@ -9,9 +9,19 @@
     <title>Catapult</title>
   </head>
   <body>
-    <div class="container">
-      <div class="nav"></div>
-      <section id="home">
+      <nav id="na">
+          <span class="mobile10"><img src="./public/icons/ei_navicon.svg" alt="" onclick="openNav()" class="move"></span>
+          <span class="desktop10 logo"><img src="./public/icons/Untitledcatapult 2 1.svg" alt=""></span>
+          <ul id="navlinks" onclick="closeNav()" class="close">
+              <li>HOME</li>
+              <li>SERVICES</li>
+              <li>ABOUT</li>
+              <li>CONTACT</li>
+              <li class="nav-download">DOWNLOAD</li>
+            </ul>
+        </nav>
+      <div class="container " id="container">
+          <section id="home">
         <div class="res-flex jcs">
             <span>
         <h2 class="head">Fast, Efficient and Timely <br> Delivery Services</h2>
@@ -191,13 +201,16 @@ services including riders/ drivers.
       <footer>
         <h6>CATAPULT EXPRESS LIMITED</h6>
         <div class="r-flex">
-            <a target="_blank" href="https://facebook.com/Rilastudios">
+            <a target="_blank" href="">
                 <img src="./public/icons/facebook.svg" alt="facebook icon" ></a>
             <a target="_blank" href="https://instagram.com/rila.studios?igshid=YmMyMTA2M2Y=">   <img src="./public/icons/instagram.svg" alt="instagram icon"class="pad22" ></a>
           <a target="_blank" href="https://twitter.com/c/rilastudios">      <img src="./public/icons/twitter.svg" alt="twitter icon"></a>
         </div>
         <p> Copyright &copy 2022 Catapult express limited</p>
       </footer>
+
+      <!-- JAVASCRIPT-->
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

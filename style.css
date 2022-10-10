@@ -21,6 +21,11 @@ footer {
     color: white;
 }
 
+nav {
+    background-color: var(--light-green);
+    margin: 0;
+}
+
 
 a {
     text-decoration: none;
@@ -68,6 +73,10 @@ textarea {
     padding: 48px;
     background-color: var(--light-green);
     color: white;
+    margin: 0;
+    position: relative;
+    transform: translateY(-2px);
+    z-index: -12;
 }
 
 #download {
@@ -88,6 +97,64 @@ textarea {
     padding: 100px 40px;
 }
 
+.opaque {
+    opacity: 0.5;
+}
+
+.container {
+   opacity: 1;
+}
+
+nav ul {
+    background-color: white;
+    color: black;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 470px;
+    width: 302px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 45px;
+    /* opacity: 0; */
+}
+
+nav li {
+    padding: 25px;
+}
+
+.nav-download {
+    background-color: var(--light-green);
+    color: white;
+    padding: 0px;
+    height: 41px;
+    line-height: 41px;
+width: 152px;
+margin: 25px auto;
+}
+
+.open {
+    display: block;
+    z-index: 200;
+    opacity: 1;
+}
+
+.close, .logo {
+    display: none;
+}
+
+.move {
+    position: relative;
+    transform: translate(82%, 72%);
+}
+
+/* .mobile10 {
+    position: relative;
+    transform: translate(10%, 10%);
+} */
 
 /* #home p {
     font-size: 30px;
@@ -378,9 +445,6 @@ text-align: center;
     button {
         padding: 15px 30px;
     }
-    .desktop {
-        display: block;
-    }
 
     #catapult-express {
         padding: 100px 227px;
@@ -561,10 +625,10 @@ text-transform: none;
     background-color: var(--green);
 }
 
+
 .m-74 {
     margin: 65px;
 } 
-
 .hm67 {
     margin: 0 67px;
     justify-content: space-evenly;
@@ -582,4 +646,42 @@ text-transform: none;
     gap: 160px;
 } */
 
+  }
+
+  @media screen and (min-width: 900px) {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 59px;
+}
+
+nav ul {
+    position: static;
+    background-color: unset;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    font-size: 12px;
+}
+
+nav li {
+    display: inline;
+}
+.nav-download {
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+}
+.logo {
+    display: block;
+    position: relative;
+    transform: translateY(23px);
+}
+.mobile10 {
+    display: none;
+}
+.destop10, .close, .open {
+    display: block;
+}
   }
