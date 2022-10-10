@@ -25,3 +25,9 @@ function openNav() {
 
 closeNav();
 window.addEventListener("scroll", closeNav)
+window.addEventListener("click", function(e) {
+    if (e.target.matches(".na") || e.target.matches(".move")) {
+        return
+    }
+    closeNav()
+})

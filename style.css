@@ -4,6 +4,10 @@
     --green: rgba(249, 249, 249, 0.06);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     /* outline: 1px solid #f00 !important; */
     box-sizing: border-box;
@@ -13,6 +17,7 @@ body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+
 }
 
 footer {
@@ -29,6 +34,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: unset;
 }
 
 h2 {
@@ -74,7 +80,7 @@ textarea {
     background-color: var(--light-green);
     color: white;
     margin: 0;
-    position: relative;
+    /* position: relative; */
     transform: translateY(-2px);
     z-index: -12;
 }
@@ -99,10 +105,12 @@ textarea {
 
 .opaque {
     opacity: 0.4;
+    z-index: 400;
 }
 
 .container {
    opacity: 1;
+   z-index: -300;
 }
 
 nav ul {
@@ -149,6 +157,7 @@ margin: 25px auto;
 .move {
     position: relative;
     transform: translate(82%, 72%);
+    z-index: 100;
 }
 
 /* .mobile10 {
@@ -641,10 +650,10 @@ text-transform: none;
 } .auto {
     margin:0px 72px 10px 34px;
 }
-/* .jcs {
-    justify-content: start;
-    gap: 160px;
-} */
+.jcs {
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
 
   }
 
@@ -657,7 +666,8 @@ nav {
 }
 
 nav ul {
-    position: static;
+    z-index: 45678;
+    position: relative;
     background-color: unset;
     color: white;
     width: fit-content;
