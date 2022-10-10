@@ -657,7 +657,7 @@ text-transform: none;
 
   }
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 925px) {
 nav {
     display: flex;
     justify-content: space-between;
@@ -678,6 +678,7 @@ nav ul {
 nav li {
     display: inline;
 }
+
 .nav-download {
     background-color: white;
     color: black;
